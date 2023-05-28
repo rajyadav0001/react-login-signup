@@ -26,6 +26,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div>© Copyright Rajnesh Yadav </div>
     </div>
   );
 };

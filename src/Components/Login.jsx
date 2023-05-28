@@ -19,6 +19,7 @@ const Login = () => {
       }
   }
   return (
+    <> 
     <div className="Login">
       <div className="LoginContainer">
         <div className="child">
@@ -30,6 +31,7 @@ const Login = () => {
                 className="input"
                 type="email"
                 name="email"
+                required
                 value={input.email}
                 onChange={(e) =>
                   setInput({ ...input, [e.target.name]: e.target.value })
@@ -40,6 +42,7 @@ const Login = () => {
                 className="input"
                 type="password"
                 name="password"
+                required
                 value={input.password}
                 onChange={(e) =>
                   setInput({ ...input, [e.target.name]: e.target.value })
@@ -56,6 +59,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+    <div>© Copyright Rajnesh Yadav </div>
+    </>
   );
 };
 

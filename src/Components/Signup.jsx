@@ -10,12 +10,15 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  
+
   const handleSubmit = (e) =>{
       e.preventDefault();
       localStorage.setItem("Userdetail",JSON.stringify(input));
       navigate('/login');
   }
   return (
+    <> 
     <div className="Signup">
       <div className="SignupContainer">
         <div className="child">
@@ -27,6 +30,7 @@ const Signup = () => {
                 className="input"
                 type="text"
                 name="name"
+                required
                 value={input.name}
                 onChange={(e) =>
                   setInput({ ...input, [e.target.name]: e.target.value })
@@ -37,6 +41,7 @@ const Signup = () => {
                 className="input"
                 type="email"
                 name="email"
+                required
                 value={input.email}
                 onChange={(e) =>
                   setInput({ ...input, [e.target.name]: e.target.value })
@@ -47,6 +52,7 @@ const Signup = () => {
                 className="input"
                 type="password"
                 name="password"
+                required
                 value={input.password}
                 onChange={(e) =>
                   setInput({ ...input, [e.target.name]: e.target.value })
@@ -63,6 +69,8 @@ const Signup = () => {
         </div>
       </div>
     </div>
+    <div>© Copyright Rajnesh Yadav </div>
+    </>
   );
 };
 
