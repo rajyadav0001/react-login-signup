@@ -16,6 +16,19 @@
    justify-content: center;
    align-items: center;
  }
+ .Home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .HomeContainer{
+  width: 30vw;
+  height: 70vh;
+  /* border: 2px solid red; */
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 14vh;
+ }
  .LoginContainer{
    width: 36vw;
    height: 70vh;
@@ -43,6 +56,12 @@
    justify-content: center;
    align-items: center;
    margin-top: 9%;
+ }
+.headingHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18%;
  }
 .fields{
    display: flex;
@@ -80,6 +99,7 @@ input[type=password]:focus {
      border: none;
      background-color: rgb(7, 119, 7);
      color: white;
+     cursor: pointer;
  }
  .existingUser{
    margin-top: 40px;
@@ -91,4 +111,32 @@ input[type=password]:focus {
    cursor: pointer;
    text-decoration: none;
     font-weight: 500;
+}
+
+.btnLogout{
+  margin-top: 50px;
+  padding: 9px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(7, 119, 7);
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btnLogout:hover {
+    background-color: red;
+}
+.btnDelete:hover {
+  background-color: red;
+}
+.btnDelete{
+  margin-top: 50px;
+  padding: 9px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(7, 119, 7);
+  color: white;
+  cursor: pointer;
 }

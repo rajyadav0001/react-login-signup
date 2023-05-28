@@ -12,6 +12,7 @@ const Login = () => {
       e.preventDefault();
       const logedUser = JSON.parse(localStorage.getItem('Userdetail'));
       if(logedUser.email===input.email && logedUser.password===input.password){
+          localStorage.setItem("loggedin",true);
           navigate('/');
       }else{
           alert("Wrong Email or Password");
